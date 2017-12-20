@@ -23,7 +23,7 @@ public class Queen {
             = new HashMap< String, List<Integer>>();
     private static UnweightedGraph g;
     private static final Color[] colors = {Color.CYAN, Color.GRAY, Color.MAGENTA, Color.LIGHTGRAY, Color.BLACK, Color.BLUE, Color.GREEN, Color.PURPLE, Color.YELLOW, Color.ORANGE,
-        Color.RED, Color.PINK, Color.ALICEBLUE, Color.AQUA, Color.BROWN, Color.FUCHSIA, Color.MISTYROSE};
+        Color.RED, Color.PINK, Color.ALICEBLUE, Color.AQUA, Color.BROWN, Color.FUCHSIA, Color.MISTYROSE,Color.AZURE};
     private static ArrayList<Color> Vcolors; //to color the vertices , it should be passed to DisplayQueen Class 
 
     public static void main() {
@@ -76,7 +76,7 @@ public class Queen {
             for (Object v : g.getNeighbors(i)) {
                 colorVer[(int) v][j] = true;
             }
-            String colorName = cUtils.getColorNameFromHex(colors[j].hashCode()); // get the name of color using it hash number
+            String colorName = cUtils.getColorNameFromHex((int)(colors[j].getBlue()*255),(int)(colors[j].getGreen()*255),(int)(colors[j].getRed()*255)); // get the name of color using it hash number
             System.out.println(i + ".vertex is colored with     " + colorName);
             verticesColor.add(i, colors[j]);
 

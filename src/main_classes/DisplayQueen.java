@@ -1,9 +1,12 @@
-package utilities_classes;
+package main_classes;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import main_classes.Queen;
+import utilities_classes.Displayable;
+import utilities_classes.GraphView;
+import utilities_classes.UnweightedGraph;
 
 public class DisplayQueen extends Application {
 

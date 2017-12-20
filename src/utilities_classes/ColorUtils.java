@@ -193,10 +193,7 @@ public class ColorUtils {
 	}
         
         
-        public  String getColorNameFromHex(int hexColor) {
-		int r = (hexColor & 0xFF0000) >> 16;
-		int g = (hexColor & 0xFF00) >> 8;
-		int b = (hexColor & 0xFF);
+        public  String getColorNameFromHex(int b,int g,int r) {
 		return getColorNameFromRgb(r, g, b);
 	}
         public class ColorName {
@@ -233,9 +230,5 @@ public class ColorUtils {
 	}
         
         
-        public static void main(String[] args) {
-        ColorUtils u = new ColorUtils();
-        u.initColorList();
-            System.out.println(u.getColorNameFromHex(0xff00ffff));
-    }
+       
 }
