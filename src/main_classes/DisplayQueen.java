@@ -17,8 +17,9 @@ public class DisplayQueen extends Application {
     Queen qq = new Queen();
     QueenVertex[] vertices=new QueenVertex[qq.getSize()];  
     int x,y ;
+    //generate an random x and y for place the vertices 
       for (int i = 0; i < qq.getSize(); i++) {
-          x=(((int)(Math.random()*100000))%1150)+20;
+          x=(((int)(Math.random()*100000))%1150)+30;
           y=(((int)(Math.random()*100000))%550)+20;
           vertices[i]=new QueenVertex(x,y,qq.getColor(i));
       }
