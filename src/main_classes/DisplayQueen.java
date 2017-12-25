@@ -1,4 +1,11 @@
 package main_classes;
+/*
+this project was done by @Abdulrahman Alabrash 
+1421221032
+alabrash.abd@gmail.com
+For BLM461E-Fall 
+@Berna Kiraz and @ Kadir Aram
+*/
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.paint.Color;

@@ -1,5 +1,11 @@
 package main_classes;
-
+/*
+this project was done by @Abdulrahman Alabrash 
+1421221032
+alabrash.abd@gmail.com
+For BLM461E-Fall 
+@Berna Kiraz and @ Kadir Aram
+*/
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -27,7 +33,7 @@ public class Queen {
     private static ArrayList<Color> Vcolors; //to color the vertices , it should be passed to DisplayQueen Class 
 
     public static void main() {
-        String path = "C:\\Users\\EDAAT\\Desktop\\queen11_11.col";
+        String path = "queen11_11.col";// //C:\\Users\\EDAAT\\Desktop\\queen11_11.col
         g =readUnweightedGraphFromFile(path);
         Vcolors = heuristic(g);
     }
